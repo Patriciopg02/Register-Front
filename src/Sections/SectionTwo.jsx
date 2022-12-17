@@ -92,7 +92,7 @@ export default function SectionTwo() {
                         />
                     </div>
                     {
-                        isLoading && <div>Loading...</div>
+                        isLoading && <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
                     }
                 </div>  
             </div>

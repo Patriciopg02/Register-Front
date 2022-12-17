@@ -6,7 +6,7 @@ import axios from 'axios';
 function Formulario() {
 
     const onSubmit = (values, {resetForm}) => {
-      axios.post("http://localhost:3001/users", {
+      axios.post(`${process.env.REACT_APP_MY_API_URL}/users`, {
         username:values.username,
         email:values.email,
         password:values.password

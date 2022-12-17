@@ -72,9 +72,48 @@
 }
 
 .page2 .div2 p:hover {
-    text-shadow: .1vw .2vw .3vw rgb(231, 51, 228), .5vw .5vw .2px yellow ;
+    text-shadow: .1vw .2vw .3vw #e733e4, .5vw .5vw .2px yellow ;
 }
 
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 8vw;
+    height: 8vw;
+    margin-top: -13vh;
+    margin-left: 25vw;
+    
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 2.4vw;
+    height: 2.4vw;
+    margin: .8vw;
+    border: .4vw solid #f79bee;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #f79bee transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
 @media (max-width:600px) {
     .slider {
         height: 12vh;
@@ -105,5 +144,21 @@
         font-size: 35vw;
         text-shadow: .1vw .2vw .3vw rgb(231, 51, 228), 1.5vw 1.5vw .2px yellow ;
     }
+    .lds-ring {
+        width: 8vw;
+        height: 8vw;
+        margin-top: -6vh;
+        margin-left: 55vw;
+        
+      }
+      .lds-ring div {
+        width: 8vw;
+        height: 8vw;
+        margin: .8vw;
+        border: 1.3vw solid #f79bee;
+        border-radius: 50%;
+        animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        border-color: #f79bee transparent transparent transparent;
+      }
 
 }
