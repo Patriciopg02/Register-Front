@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'NeueMontreal-Bold';
+  src: url('assets/NeueMontreal-Bold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NeueMontreal-Medium';
+  src: url('assets/NeueMontreal-Medium.otf') format('truetype');
+}
+@font-face {
+  font-family: 'NeueMontreal-Regular';
+  src: url('assets/NeueMontreal-Regular.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Tusker-Grotesk';
+  src: url('assets/TuskerGrotesk-Bold.ttf') format('truetype');
+}
+
+.App {
+  width: 100vw;
+	height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+	position: relative;
+  text-align: center;
+  overflow-x: hidden;
+  background-color: #98fb1c;
+}
+
+

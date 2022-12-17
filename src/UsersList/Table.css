@@ -1,0 +1,92 @@
+.tableContainer table {
+    font-family: 'NeueMontreal-Regular';
+    font-size: 2vh;
+    border-collapse: collapse;
+    width: 60vw;
+    background-color: #ffffff;
+    max-height: 35vh;
+    min-height: 35vh;
+    overflow-y: scroll;
+  }
+  
+.tableContainer table td, table th {
+    border: .1vw solid #ddd;
+    width: 30vw;
+    max-width: 30vw;
+    padding: .5vw;
+  }
+  
+  .tableContainer table tr:nth-child(even){background-color: #e0e0e0;}
+  
+  .tableContainer table th {
+    padding-top: 1.2vw;
+    padding-bottom: 1.2vw;
+    text-align: center;
+    background-color: #000;
+    color: greenyellow;
+  }
+
+  .tableContainer .pagination {
+    margin-bottom: 5vh;
+  }
+  .tableContainer .pagination .paginationButton {
+    border-radius: .2vw;
+    background-color: #fff;
+    margin: 1vw;
+  }
+
+  .tableContainer h3 {
+    font-family: 'NeueMontreal-Regular';
+    background-color: #fff;
+    padding: 2vw;
+    font-size: 3vh;
+    border-radius: 2vw;
+    transition: all .3s;
+  }
+
+  .tableContainer h3:hover {
+    background-color: #fff00b;
+    box-shadow: 1vw 1vw .2px #000;
+}
+
+@media (max-width:600px) {
+  .tableContainer table {
+    font-size: 1.7vh;
+    width: 90vw;
+    max-height: 55vh;
+    min-height: 55vh;
+    overflow-y: scroll;
+  }
+  
+.tableContainer table td, table th {
+    border: .1vw solid #ddd;
+    width: 30vw;
+    max-width: 30vw;
+    padding: 1vw;
+    word-wrap: break-word;
+  }
+  
+  .tableContainer table tr:nth-child(even){background-color: #e0e0e0;}
+  
+  .tableContainer table th {
+    padding-top: 1.2vw;
+    padding-bottom: 1.2vw;
+    text-align: center;
+    background-color: #000;
+    color: greenyellow;
+  }
+
+  .tableContainer .pagination {
+    margin-top: 4vh;
+    margin-bottom: 1vh;
+  }
+  .tableContainer .pagination .paginationButton {
+    margin: 2vw;
+  }
+  .tableContainer h3 {
+    background-color: #fff00b;
+    box-shadow: 1vw 1vw .2px #000;
+    font-size: 3vh;
+    margin-top: 15vh;
+  }
+}
