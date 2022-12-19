@@ -15,7 +15,7 @@ export default function Footer() {
                 <div className='redes'>
                     <div className='git'>
                         <p>You can view the code right here: </p>
-                        <a href='https://github.com/Patriciopg02/Register-lemon' target='_blank'>
+                        <a href='https://github.com/Patriciopg02/Register-Front' target='_blank'>
                             <img src={github} className='items' id='githubpng' alt='github'/>
                         </a>
                     </div>
